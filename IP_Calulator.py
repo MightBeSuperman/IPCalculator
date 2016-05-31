@@ -69,11 +69,14 @@ def menu():
         
 def iptobin():
     print 'we are still working on this part, hang in there.'
+    print 'In Progress'
     menu();
     
 def bintoip():
     print 'We are still working on this program, hang in there!'
     menu()
+    
+
         
 #Begin Program
 if __name__ == "__main__":
