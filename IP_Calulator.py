@@ -59,7 +59,7 @@ def menu():
     choice = raw_input("Enter Your Choice:")
     
     if choice == "1":
-        iptobin()
+        iptobin_first()
         
     elif choice == "2":
         bintoip()
@@ -67,13 +67,49 @@ def menu():
     elif choice == "99":
         sys.exit();
         
-def iptobin():
-    print 'we are still working on this part, hang in there.'
-    print 'In Progress'
-    menu();
+def iptobin_first():
+    choice = raw_input("Enter the First Octet: ___.XXX.XXX.XXX")
+    if choice == "128":
+        print " 1 0 0 0  0 0 0 0"
+        iptobin_second();
+    
+    elif choice == "192":
+        print " 1 1 0 0  0 0 0 0"
+        iptobin_second();
+    
+    elif choice == "224":
+        print " 1 1 1 0  0 0 0 0"
+        iptobin_second();
+    
+    elif choice == "240":
+        print " 1 1 1 1  0 0 0 0"
+        iptobin_second();
+    
+    elif choice == "248":
+        print " 1 1 1 1  1 0 0 0"
+        iptobin_second();
+    
+    elif choice == "252":
+        print " 1 1 1 1  1 1 0 0"
+        iptobin_second();
+    
+    elif choice == "254":
+        print " 1 1 1 1  1 1 1 0"
+        iptobin_second();
+    
+    elif choice == "255":
+        print " 1 1 1 1  1 1 1 1"
+        iptobin_second();
+    
+    elif choice == " ":
+        menu();
     
 def bintoip():
     print 'We are still working on this program, hang in there!'
+    menu()
+    
+def iptobin_second():
+    print 'We are still working on this program, hang in there!' 
     menu()
     
 
