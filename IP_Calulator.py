@@ -68,36 +68,36 @@ def menu():
         sys.exit();
         
 def iptobin_first():
-    choice = raw_input("Enter the First Octet: ___.XXX.XXX.XXX")
-    if choice == "128":
+    first = raw_input("Enter the First Octet: ___.XXX.XXX.XXX")
+    if first == "128":
         print " 1 0 0 0  0 0 0 0"
         iptobin_second();
     
-    elif choice == "192":
+    elif first == "192":
         print " 1 1 0 0  0 0 0 0"
         iptobin_second();
     
-    elif choice == "224":
+    elif first == "224":
         print " 1 1 1 0  0 0 0 0"
         iptobin_second();
     
-    elif choice == "240":
+    elif first == "240":
         print " 1 1 1 1  0 0 0 0"
         iptobin_second();
     
-    elif choice == "248":
+    elif first == "248":
         print " 1 1 1 1  1 0 0 0"
         iptobin_second();
     
-    elif choice == "252":
+    elif first == "252":
         print " 1 1 1 1  1 1 0 0"
         iptobin_second();
     
-    elif choice == "254":
+    elif first == "254":
         print " 1 1 1 1  1 1 1 0"
         iptobin_second();
     
-    elif choice == "255":
+    elif first == "255":
         print " 1 1 1 1  1 1 1 1"
         iptobin_second();
     
@@ -109,8 +109,40 @@ def bintoip():
     menu()
     
 def iptobin_second():
-    print 'We are still working on this program, hang in there!' 
-    menu()
+        if choice == "128":
+            print " 1 0 0 0  0 0 0 0"
+            iptobin_second();
+    
+        elif choice == "192":
+            print " 1 1 0 0  0 0 0 0"
+            print 
+    
+        elif choice == "224":
+            print " 1 1 1 0  0 0 0 0"
+            iptobin_second();
+    
+        elif choice == "240":
+            print " 1 1 1 1  0 0 0 0"
+            iptobin_second();
+    
+        elif choice == "248":
+            print " 1 1 1 1  1 0 0 0"
+            iptobin_second();
+    
+        elif choice == "252":
+            print " 1 1 1 1  1 1 0 0"
+            iptobin_second();
+    
+        elif choice == "254":
+            print " 1 1 1 1  1 1 1 0"
+            iptobin_second();
+    
+        elif choice == "255":
+            print " 1 1 1 1  1 1 1 1"
+            iptobin_second();
+    
+        elif choice == " ":
+            menu();
     
 
         
